@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+.outer-header{
+    background-color:#ffffff;
+    Border-bottom:1px solid #e5e5e5;
+}
+.header-elements{
+    max-width:1200px;
+    margin:0 auto;
+    padding:16px 24px;
+    display:flex;
+    align-items:cnter;
+    justify-content:space-between;
+}
+.brand a{
+    font-size:22px;
+    font-weight:700;
+    text-decoration:none;
+    color:#111;	
+}
+.navigation ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header-actions{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.action-link{
+text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.cart-link{
+      text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart-count{
+    background-color: #111;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 4px;
+}
+.hero-section{
+    background-color:#d7dbcf;
+    padding:60px 0;
+}
+.hero-container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+.hero-text{
+    flex:1;
+}
+.hero-text h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 16px;
+}
+.hero-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 24px;
+    max-width: 480px;
+}
+.shop-btn{
+    display:inline-block;
+    background-color:#111;
+    padding:12px 28px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.image{
+    flex:1;
+}
+.image img{
+     width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+</style>
+</head>
+<body>
+<header class="outer-header">
+<div class="header-elements">
+<div class="brand">
+<a href="home.html" title="home">MAN VIBE</a>
+</div>
+<nav class="navigation">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="newarrivals.html">New Arrivals</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li><a href="contact.html">Contact</a><li>
+</ul>
+</nav>
+<div class="header-actions">
+<a href="#" class="action-link">Search</a>
+<a href="#" class="action-link">Login</a>
+<a href"#" class="cart-link">Cart<span class="cart-count">2</span></a>
+</div>
+</div>
+</header>
+<section class="hero-section">
+<div class="hero-container">
+<div class="hero-text">
+<h1>Men's Fashion That Defines You</h1>
+<p>Premium styles for every season. Designed for confidence and comfort.</p>
+<a href="shop.html" class="shop-btn" title="shop now">Shop Now</a>
+</div>
+<div class="image">
+<img src="pintrest.jpeg">
+</div>
+</div>
+</section>
+</body>
+</html>
