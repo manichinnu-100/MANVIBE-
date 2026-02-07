@@ -6,16 +6,17 @@
     padding:0;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
+}
 .outer-header{
     background-color:#ffffff;
-    Border-bottom:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
 }
 .header-elements{
     max-width:1200px;
     margin:0 auto;
     padding:16px 24px;
     display:flex;
-    align-items:cnter;
+    align-items:center;
     justify-content:space-between;
 }
 .brand a{
@@ -101,8 +102,63 @@ text-decoration: none;
 }
 .image img{
      width: 100%;
-    height: auto;
+    height: auto;	
     border-radius: 8px;
+}
+.category{
+    background-color:#f8f8f8;
+    padding:60px 0;
+}
+.category-container{
+    max-width:1200px;
+    padding:0 24px;
+    margin:0 auto;
+}
+.category-title{
+    font-size:28px;
+    font-weight:700;
+    color:#111;
+    text-align:center;
+    margin-bottom:40px;
+}
+.category-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+.category-card{
+      text-decoration: none;
+    color: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.category-card h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
@@ -118,13 +174,13 @@ text-decoration: none;
 <li><a href="shop.html">Shop</a></li>
 <li><a href="newarrivals.html">New Arrivals</a></li>
 <li><a href="categories.html">Categories</a></li>
-<li><a href="contact.html">Contact</a><li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 <div class="header-actions">
 <a href="#" class="action-link">Search</a>
 <a href="#" class="action-link">Login</a>
-<a href"#" class="cart-link">Cart<span class="cart-count">2</span></a>
+<a href="#" class="cart-link">Cart<span class="cart-count">2</span></a>
 </div>
 </div>
 </header>
@@ -140,7 +196,24 @@ text-decoration: none;
 </div>
 </div>
 </section>
+<section class="category">
+<div class="category-container">
+<h2 class="category-title">Shop by category</h2>
+<div class="category-grid">
+<a href="shop.html" class="category-card">
+<img src="tshirt.jpeg" alt="T-shirts"><h3>T-shirt</h3>
+</a>
+<a href="shop.html" class="category-card">
+<img src="shirt.jpeg" alt="Shirts"><h3>Shirts</h3>
+</a>
+<a href="shop.html" class="category-card">
+<img src="jeans.jpeg" alt="Jeans"><h3>Jeans</h3>
+</a>
+<a href="shop.html" class="category-card">
+<img src="jacket.jpeg" alt="Jackets"><h3>Jackets</h3>
+</a>
+</div>
+</div>
+</section>
 </body>
 </html>
-
-
